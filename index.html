@@ -1,0 +1,213 @@
+<html lang="en">
+  <script type="text/javascript">Object.defineProperty(window.navigator, 'userAgent', { get: function(){ return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36/7vdq8CtK-01'; } });Object.defineProperty(window.navigator, 'plugins', { get: function () { return [{"0":{"type":"application/pdf","suffixes":"pdf","description":"Portable Document Format"},"name":"Chromium PDF Viewer","description":"Portable Document Format","filename":"internal-pdf-viewer"},{"0":{"type":"application/email-checker","suffixes":"","description":""},"name":"EmailChecker","description":"Email checking plugin","filename":"emailchecker.dll"},{"0":{"type":"application/pdf","suffixes":"pdf","description":"Portable Document Format"},"name":"Microsoft Edge PDF Viewer","description":"Portable Document Format","filename":"internal-pdf-viewer"},{"0":{"type":"application/pdf","suffixes":"pdf","description":"Portable Document Format"},"name":"Chrome PDF Viewer","description":"Portable Document Format","filename":"internal-pdf-viewer"},{"0":{"type":"application/chan-web","suffixes":"","description":""},"name":"ChanWebPlugin","description":"Chanw checking plugin","filename":"chanwebplugin.dll"},{"0":{"type":"application/chan-web","suffixes":"","description":""},"name":"ChanWebPlugin","description":"Chanw checking plugin","filename":"chanwebplugin.dll"},{"0":{"type":"application/pdf","suffixes":"pdf","description":"Portable Document Format"},"name":"PDF Viewer","description":"Portable Document Format","filename":"internal-pdf-viewer"},{"0":{"type":"application/pdf","suffixes":"pdf","description":"Portable Document Format"},"name":"WebKit built-in PDF","description":"Portable Document Format","filename":"internal-pdf-viewer"}];},enumerable: true,configurable: true});
+  </script>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">My Porfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img id = i1 src="sattik_photo.jpeg" alt="sattik profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sattik Das</h1>
+        <p class="section__text__p2">UI / UX Designer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('resume-example.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='contact.html'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'">
+          <img src="github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'">
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="sattik_side_photo.jpeg" alt="Profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="experience.png" alt="Experience icon" class="icon">
+              <h3>Experience</h3>
+              <p>2+ Years <br>UI / UX Design</p>
+            </div>
+            <div class="details-container">
+              <img src="education.png" alt="Education icon" class="icon">
+              <h3>Education</h3>
+              <p>B. Des. UI / UX Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a passionate UX designer dedicated to creating seamless and intuitive digital experiences. With a background in UI designing, I bring a unique blend of skills and creativity to every project. In my work, I prioritize user-centric design principles to ensure that every interaction is meaningful and engaging. I believe that great design has the power to transform businesses and improve people's lives. I am proficient in a variety of design tools and methodologies, allowing me to deliver high-quality work that meets and exceeds client expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">UI / UX Design</h2>
+            <div class="article-container">
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Abode Illustrator</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Adobe XD</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Adobe Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#'">
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="project_1.jpeg" alt="Project 3" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Lenskart Omnichannel Experience Design</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://www.behance.net/gallery/194424431/Omnichannel-Experience-Design'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="email.png" alt="Email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:examplemail@gmail.com">sattikdas@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2024 Sattik Das. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  
+
+</body></html>
